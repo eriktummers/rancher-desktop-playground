@@ -55,3 +55,12 @@ git clone https://github.com/<YOUR_NAME_HERE>/rancher-desktop-playground.git
 ```
 
 Start Rancher desktop with the shortcut on the desktop. Accept the defaults for kubernetes and runtime. Now install [ingress-nginx](ingress-nginx) and [argocd](argocd) and you're ready for playing.
+
+## Custom apps
+
+Now you have a basic kubernetes setup with argocd for gitops deployments. Here are some custom apps you can deploy and tinker with.
+
+The basic flow is adding an application yaml to the apps/localdev folder that points to the localdev overlay. After a git commit/push it will be deployed with argocd.
+
+* [website](website): simple nginx website with a custom index.html
+
